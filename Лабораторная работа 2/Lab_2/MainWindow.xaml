@@ -1,0 +1,35 @@
+﻿<Window x:Class="Lab_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="615.205" Width="1044.11">
+    <Grid>
+        <Button x:Name="openDBBtn" Content="Открыть БД" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="65" FontSize="14" Click="openDBBtn_Click"/>
+        <Button x:Name="AddBtn" Content="Добавить" HorizontalAlignment="Left" Margin="561,10,0,0" VerticalAlignment="Top" Width="100" Height="65" FontSize="14" Click="AddBtn_Click" IsEnabled="False"/>
+        <Button x:Name="EditBtn" Content="Изменить" HorizontalAlignment="Left" Margin="666,10,0,0" VerticalAlignment="Top" Width="100" Height="65" FontSize="14" Click="EditBtn_Click" IsEnabled="False"/>
+        <Button x:Name="DelBtn" Content="Удалить" HorizontalAlignment="Left" Margin="771,10,0,0" VerticalAlignment="Top" Width="100" Height="65" FontSize="14" Click="DelBtn_Click" IsEnabled="False"/>
+        <TextBox x:Name="studentNameTB" HorizontalAlignment="Left" Height="30" Margin="315,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" FontSize="14" IsEnabled="False"/>
+        <Label Content="ФИО студента" HorizontalAlignment="Left" Margin="209,10,0,0" VerticalAlignment="Top" Height="30" Width="101" FontSize="14"/>
+        <TextBox x:Name="phoneTB" HorizontalAlignment="Left" Height="30" Margin="315,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" FontSize="14" IsEnabled="False"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="242,45,0,0" VerticalAlignment="Top" Height="30" Width="68" FontSize="14"/>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="406" Margin="10,166,0,0" VerticalAlignment="Top" Width="1016" FontSize="14">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="ID"/>
+                <DataGridTextColumn Binding="{Binding Name}" Header="ФИО"/>
+                <DataGridTextColumn Binding="{Binding Math}" Header="Математика"/>
+                <DataGridTextColumn Binding="{Binding Physics}" Header="Физика"/>
+                <DataGridTextColumn Binding="{Binding PhoneNumber}" Header="Номер телефона"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Математика" HorizontalAlignment="Left" Margin="222,80,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Физика" HorizontalAlignment="Left" Margin="253,114,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Slider x:Name="mathSlider" HorizontalAlignment="Left" Margin="315,86,0,0" VerticalAlignment="Top" Width="241" Height="23" Maximum="5" Minimum="2" SmallChange="1" Value="3" ValueChanged="mathSlider_ValueChanged" IsSnapToTickEnabled="True" IsEnabled="False"/>
+        <Slider x:Name="physicSlider" HorizontalAlignment="Left" Margin="315,120,0,0" VerticalAlignment="Top" Width="241" Height="23" Maximum="5" Minimum="2" SmallChange="1" Value="3" ValueChanged="physicSlider_ValueChanged" IsSnapToTickEnabled="True" IsEnabled="False"/>
+        <Label x:Name="mathSValue" Content="3" HorizontalAlignment="Left" Margin="563,80,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="physSValue" Content="3" HorizontalAlignment="Left" Margin="563,115,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
