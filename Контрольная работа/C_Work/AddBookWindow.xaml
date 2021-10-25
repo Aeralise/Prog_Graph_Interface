@@ -1,0 +1,24 @@
+﻿<Window x:Class="C_Work.AddBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:C_Work"
+        mc:Ignorable="d"
+        Title="Добавление книги" Height="271.022" Width="417.59" Closing="Window_Closing">
+    <Grid>
+        <Label Content="Название:" HorizontalAlignment="Left" Height="26" Margin="10,10,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Height="26" Margin="163,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <Label Content="Цена:" HorizontalAlignment="Left" Height="26" Margin="10,41,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Right"/>
+        <Label Content="Штрих-код:" HorizontalAlignment="Left" Height="26" Margin="10,72,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Right"/>
+        <Label Content="Автор:" HorizontalAlignment="Left" Height="26" Margin="10,103,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Right"/>
+        <Label Content="Количество страниц:" HorizontalAlignment="Left" Height="26" Margin="10,134,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="priceTB" HorizontalAlignment="Left" Height="26" Margin="163,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" PreviewKeyDown="priceTB_PreviewKeyDown" PreviewTextInput="priceTB_PreviewTextInput"/>
+        <TextBox x:Name="codeTB" HorizontalAlignment="Left" Height="26" Margin="163,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <TextBox x:Name="autorTB" HorizontalAlignment="Left" Height="26" Margin="163,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <TextBox x:Name="pagesCountTB" HorizontalAlignment="Left" Height="26" Margin="163,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" PreviewTextInput="pagesCountTB_PreviewTextInput" PreviewKeyDown="pagesCountTB_PreviewKeyDown"/>
+        <Button x:Name="addBtn" Content="Добавить" HorizontalAlignment="Left" Height="40" Margin="230,188,0,0" VerticalAlignment="Top" Width="170" Click="addBtn_Click"/>
+        <Button x:Name="cancelBtn" Content="Отменить" HorizontalAlignment="Left" Height="40" Margin="10,188,0,0" VerticalAlignment="Top" Width="170" Click="cancelBtn_Click"/>
+
+    </Grid>
+</Window>

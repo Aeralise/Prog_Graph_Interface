@@ -1,0 +1,24 @@
+﻿<Window x:Class="C_Work.AddDiskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:C_Work"
+        mc:Ignorable="d"
+        Title="Добавление диска" Height="269.262" Width="418.852" Closing="Window_Closing">
+    <Grid>
+        <Label Content="Название:" HorizontalAlignment="Left" Height="26" Margin="10,10,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Height="26" Margin="163,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <Label Content="Цена:" HorizontalAlignment="Left" Height="26" Margin="10,41,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Right"/>
+        <Label Content="Штрих-код:" HorizontalAlignment="Left" Height="26" Margin="10,72,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Right"/>
+        <Label Content="Тип:" HorizontalAlignment="Left" Height="26" Margin="10,103,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Right"/>
+        <Label Content="Содержимое диска:" HorizontalAlignment="Left" Height="26" Margin="10,134,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="priceTB" HorizontalAlignment="Left" Height="26" Margin="163,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" PreviewTextInput="priceTB_PreviewTextInput" PreviewKeyDown="priceTB_PreviewKeyDown"/>
+        <TextBox x:Name="codeTB" HorizontalAlignment="Left" Height="26" Margin="163,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <TextBox x:Name="typeTB" HorizontalAlignment="Left" Height="26" Margin="163,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <TextBox x:Name="incTB" HorizontalAlignment="Left" Height="26" Margin="163,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <Button x:Name="addBtn" Content="Добавить" HorizontalAlignment="Left" Height="40" Margin="230,188,0,0" VerticalAlignment="Top" Width="170" Click="addBtn_Click"/>
+        <Button x:Name="cancelBtn" Content="Отменить" HorizontalAlignment="Left" Height="40" Margin="10,188,0,0" VerticalAlignment="Top" Width="170" Click="cancelBtn_Click"/>
+
+    </Grid>
+</Window>
