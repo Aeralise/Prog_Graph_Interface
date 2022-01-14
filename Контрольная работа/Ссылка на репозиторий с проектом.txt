@@ -1,5 +1,5 @@
-Лабораторная работа 2:
-https://github.com/Aeralise/Prog_Graph_Interface/tree/main/Лабораторная%20работа%202
+Контрольная работа:
+https://github.com/Aeralise/Prog_Graph_Interface/tree/main/Контрольная%20работа
 
 Все работы в дисциплине:
 https://github.com/Aeralise/Prog_Graph_Interface

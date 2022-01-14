@@ -106,7 +106,7 @@ namespace Lab_2
             st.Physics = (int)physicSlider.Value;
             st.PhoneNumber = phoneTB.Text;
             string sql = $"UPDATE GRADES SET MATH = {st.Math}, PHYSICS = {st.Physics} WHERE STUDENT_ID = {st.Id};" +
-                $"UPDATE STUDENT SET NAME = {st.Name}, PHONE = {st.PhoneNumber} WHERE ID = {st.Id};";
+                $"UPDATE STUDENT SET NAME = '{st.Name}', PHONE = '{st.PhoneNumber}' WHERE ID = {st.Id};";
             SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
             ///Выполнение запроса
             command.ExecuteNonQuery();
@@ -146,5 +146,11 @@ namespace Lab_2
             if (physSValue != null)
                 physSValue.Content = physicSlider.Value.ToString();
         }
+
     }
+
+
 }
+
+
+
